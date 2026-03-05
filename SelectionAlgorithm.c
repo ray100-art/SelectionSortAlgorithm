@@ -1,3 +1,4 @@
+//BRIAN NDUNGU- EB3/67236/23
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,12 +24,12 @@ void printArray(int arr[], int n) {
 
 int main() {
     int n, i;
-    int arr[100];   /* Fixed size array instead of variable-length */
+    int arr[100000];   /* Fixed size array instead of variable-length */
 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
 
-    if (n <= 0 || n > 100) {
+    if (n <= 0 || n > 100000) {
         printf("Invalid input. Please enter a number between 1 and 100.\n");
         return 1;
     }
@@ -48,4 +49,5 @@ int main() {
     printArray(arr, n);
 
     return 0;
+
 }
