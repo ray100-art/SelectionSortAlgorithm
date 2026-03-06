@@ -23,12 +23,12 @@ void printArray(int arr[], int n) {
 
 int main() {
     int n, i;
-    int arr[100000];   /* Fixed size array instead of variable-length */
+    int arr[10000000];   /* Fixed size array instead of variable-length */
 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
 
-    if (n <= 0 || n > 100000) {
+    if (n <= 0 || n > 10000000) {
         printf("Invalid input. Please enter a number between 1 and 100.\n");
         return 1;
     }
@@ -50,4 +50,5 @@ int main() {
     return 0;
 
 }
+
 
